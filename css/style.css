@@ -487,19 +487,19 @@ body.split-done .split-intro {
 }
 
 .thumb-item:nth-child(1) .thumb {
-  background-image: url('../img/fo3.png');
+  background-image: url('../img/fo01.png');
 }
 
 .thumb-item:nth-child(2) .thumb {
-  background-image: url('../img/fo2.png');
+  background-image: url('../img/fo02.png');
 }
 
 .thumb-item:nth-child(3) .thumb {
-  background-image: url('../img/fo6.png');
+  background-image: url('../img/fo03.png');
 }
 
 .thumb-item:nth-child(4) .thumb {
-  background-image: url('../img/fo1.png');
+  background-image: url('../img/fo04.png');
 }
 
 .work-titles {

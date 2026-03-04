@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>강두일 포트폴리오</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-  <!-- === SPLIT-INTRO: 히어로(위) + About(뒤) ==s= -->
+  <!-- === SPLIT-INTRO: 히어로(위) + About(뒤) === -->
   <section class="split-intro" aria-label="Intro split reveal">
     <div class="split-pin">
       <div class="about-under">
@@ -23,25 +24,27 @@
           </h1>
         </div>
       </div>
+
       <div class="wrap" id="hero">
         <div class="work-overlay" id="workOverlay" aria-hidden="true">
           <div class="work-layer" data-work="1">
-            <img src="img/work1.png" alt="" class="work-bg" loading="lazy" decoding="async">
-            <img src="img/work1.png" alt="" class="work-fg" loading="lazy" decoding="async">
+            <img src="img/work01.png" alt="" class="work-bg" loading="lazy" decoding="async">
+            <img src="img/work01.png" alt="" class="work-fg" loading="lazy" decoding="async">
           </div>
           <div class="work-layer" data-work="2">
-            <img src="img/work2.png" alt="" class="work-bg" loading="lazy" decoding="async">
-            <img src="img/work2.png" alt="" class="work-fg" loading="lazy" decoding="async">
+            <img src="img/work02.png" alt="" class="work-bg" loading="lazy" decoding="async">
+            <img src="img/work02.png" alt="" class="work-fg" loading="lazy" decoding="async">
           </div>
           <div class="work-layer" data-work="3">
-            <img src="img/work3.png" alt="" class="work-bg" loading="lazy" decoding="async">
-            <img src="img/work3.png" alt="" class="work-fg" loading="lazy" decoding="async">
+            <img src="img/work03.png" alt="" class="work-bg" loading="lazy" decoding="async">
+            <img src="img/work03.png" alt="" class="work-fg" loading="lazy" decoding="async">
           </div>
           <div class="work-layer" data-work="4">
-            <img src="img/work4.png" alt="" class="work-bg" loading="lazy" decoding="async">
-            <img src="img/work4.png" alt="" class="work-fg" loading="lazy" decoding="async">
+            <img src="img/work04.png" alt="" class="work-bg" loading="lazy" decoding="async">
+            <img src="img/work04.png" alt="" class="work-fg" loading="lazy" decoding="async">
           </div>
         </div>
+
         <div class="bg" aria-hidden="true">
           <svg class="hero-venn" viewBox="0 0 1200 900" role="img" aria-label="Technology & Humanity">
             <defs>
@@ -52,14 +55,17 @@
                 <stop offset="70%" stop-color="#0b5bd6" />
                 <stop offset="100%" stop-color="#062a7a" />
               </radialGradient>
+
               <radialGradient id="gTechHalo" cx="30%" cy="55%" r="65%">
                 <stop offset="0%" stop-color="rgba(255,255,255,.18)" />
                 <stop offset="60%" stop-color="rgba(255,255,255,.06)" />
                 <stop offset="100%" stop-color="rgba(255,255,255,0)" />
               </radialGradient>
+
               <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
                 <feGaussianBlur stdDeviation="20" />
               </filter>
+
               <filter id="dotGlow" x="-60%" y="-60%" width="220%" height="220%">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="0.7" result="g" />
                 <feMerge>
@@ -67,11 +73,13 @@
                   <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
+
               <mask id="curveMask" maskUnits="userSpaceOnUse">
                 <rect x="0" y="0" width="1200" height="900" fill="white" />
                 <circle cx="625" cy="420" r="240" fill="black" />
                 <circle cx="550" cy="600" r="240" fill="black" />
               </mask>
+
               <linearGradient id="gDiagBlue" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(135 .5 .5)">
                 <stop offset="0%" stop-color="#BEEDEF" />
                 <stop offset="55%" stop-color="#68C3C4" />
@@ -79,6 +87,7 @@
                 <animateTransform attributeName="gradientTransform" type="rotate" values="135 .5 .5; 495 .5 .5"
                   dur="20s" repeatCount="indefinite" />
               </linearGradient>
+
               <radialGradient id="gFlow" cx="35%" cy="30%" r="55%" fx="30%" fy="28%">
                 <stop offset="0%" stop-color="rgba(255,255,255,.18)" />
                 <stop offset="35%" stop-color="rgba(255,255,255,.08)" />
@@ -86,26 +95,32 @@
                 <animate attributeName="fx" values="30%;70%;30%" dur="22s" repeatCount="indefinite" />
                 <animate attributeName="fy" values="28%;62%;28%" dur="26s" repeatCount="indefinite" />
               </radialGradient>
+
               <radialGradient id="gBlueVignette" cx="50%" cy="55%" r="62%">
                 <stop offset="70%" stop-color="rgba(0,0,0,0)" />
                 <stop offset="100%" stop-color="rgba(0,0,0,.25)" />
               </radialGradient>
             </defs>
+
             <g transform="translate(400,330)">
               <circle r="200" fill="url(#gTechHalo)" />
               <circle r="220" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="3 7" opacity="0.85" />
               <text class="venn-label" x="0" y="0" fill="#000">Usability</text>
             </g>
+
             <g transform="translate(770,590)">
               <circle r="230" fill="url(#gDiagBlue)" filter="url(#soft)" />
               <circle r="230" fill="url(#gFlow)" opacity=".25" />
               <text class="venn-label" x="0" y="0" fill="#ffffff">Delight</text>
             </g>
+
             <ellipse cx="580" cy="500" rx="430" ry="240" transform="translate(1200,0) scale(-1,1) rotate(39.58 650 500)"
               fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" mask="url(#curveMask)" />
+
             <g transform="translate(1200,0) scale(-1,1) rotate(39.58 650 500)">
               <path id="orbitPath" d="M 1010 500 A 430 240 0 1 1 150 500 A 430 240 0 1 1 1010 500" fill="none"
                 stroke="none" />
+
               <g mask="url(#curveMask)">
                 <circle r="6" fill="#111" filter="url(#dotGlow)">
                   <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
@@ -113,6 +128,7 @@
                   </animateMotion>
                 </circle>
               </g>
+
               <g mask="url(#curveMask)">
                 <circle r="6" fill="#111" filter="url(#dotGlow)">
                   <animateMotion dur="14s" begin="-7s" repeatCount="indefinite" rotate="auto">
@@ -123,6 +139,7 @@
             </g>
           </svg>
         </div>
+
         <div class="ui" aria-label="overlay text">
           <a href="#hero" class="brand" aria-label="Go to home">
             <div class="logo" aria-label="Limitless">
@@ -130,24 +147,30 @@
             </div>
             <div class="tag">begins here</div>
           </a>
+
           <nav class="nav" aria-label="primary">
             <a href="#about"><span class="idx">01</span><span class="lbl">INFO</span></a>
             <a href="#work"><span class="idx">02</span><span class="lbl">WORK</span></a>
             <a href="#archive"><span class="idx">03</span><span class="lbl">ARCHIVE</span></a>
             <a href="#contact"><span class="idx">04</span><span class="lbl">CONTACT</span></a>
           </nav>
+
+          <!-- PDF 기반 프로필 정보 -->
           <div class="profile">
             <div class="portleft">
-              <div class="profile-name"><span class="profile-A">K</span>ANG DUIL</div>
-              <div class="portfolio-posi">Service Planning</div>
+              <div class="profile-name"><span class="profile-A">D</span>UIL KANG</div>
+              <div class="portfolio-posi">IT Developer &amp; Service Planner</div>
             </div>
             <div class="portright">
-              <div>2000 04 19</div>
+              <div>2000.04.19</div>
+              <div>010.6637.2646</div>
               <div>hjks0505@naver.com</div>
             </div>
           </div>
+
           <div class="scroll-hint" role="button" data-target="#about">[ SCROLL TO EXPLORE ]</div>
           <div class="scroll-word">Is that impossible? Have you tried it right?</div>
+
           <div class="thumbs">
             <div class="thumb-item" data-work="1">
               <div class="thumb-cap">[ 01 ]</div>
@@ -165,161 +188,243 @@
               <div class="thumb-cap">[ 04 ]</div>
               <div class="thumb"></div>
             </div>
+
+            <!-- PDF 기반 Work Titles -->
             <div class="work-titles" aria-hidden="true">
-              <div class="work-title" data-work="1"><span class="title">Start-Up</span></div>
-              <div class="work-title" data-work="2"><span class="title">Bootcamp</span></div>
-              <div class="work-title" data-work="3"><span class="title">Vibe Coding</span></div>
-              <div class="work-title" data-work="4"><span class="title">Web Service Planning</span></div>
+              <div class="work-title" data-work="1"><span class="title">Logiverse Website</span></div>
+              <div class="work-title" data-work="2"><span class="title">BetWeen Universe UI/UX</span></div>
+              <div class="work-title" data-work="3"><span class="title">LG DX SCHOOL</span></div>
+              <div class="work-title" data-work="4"><span class="title">Hyundai Softeer</span></div>
             </div>
           </div>
         </div>
+
         <div class="mouth-shadow mouth-top" aria-hidden="true"></div>
         <div class="mouth-shadow mouth-bottom" aria-hidden="true"></div>
       </div>
     </div>
   </section>
+
+  <!-- ABOUT -->
   <section id="about" class="about-body" aria-label="About content">
     <div class="about-body__inner">
       <div class="about-stage">
         <img class="about-stage__photo" src="img/main_img.jpg" alt="강두일 프로필 사진">
-        <div class="glass-badge b1">건설기계 온라인 매매 플랫폼 로지벌스 창업</div>
-        <div class="glass-badge b2">예비창업패키지 장려상 수상</div>
-        <div class="glass-badge b3">LG DX SCHOOL, 현대 소프티어<br>부트캠프 서비스 기획 직무 수료</div>
-        <div class="glass-badge b4">연세대학교, 고려대학교, 국무총리실 등<br>다양한 기업의 웹서비스 기획</div>
-        <div class="glass-badge b5">(주)앤드와이즈 서비스 기획 직무 4개월</div>
-      </div>
-      <div class="about-desc about-desc--center">
-        <p>(주)앤드와이즈에서 <span class="em">웹 서비스 기획</span>부터 <span class="em">국내외 협력사와의 협업</span>을 경험하며, 기획·조율·실행의 흐름을
-          익혔습니다.
-        </p>
-        <p>로지벌스 창업을 통한 <span class="em">앱/웹 서비스 기획</span>을 통해 사용자 중심 시각적 커뮤니케이션의 매력을 느꼈고, 관심은 기획자로 확장되었습니다.</p>
-        <p>이제, 사람과 기술을 연결하는 <span class="em">서비스 기획자로</span>성장해나갑니다. </p>
-        <p>작은 변화로 큰 가치를 만들겠습니다.</p>
+
+        <!-- PDF 기반 하이라이트 -->
+        <div class="glass-badge b1">로지벌스(Logiverse) 창업 · CTO</div>
+        <div class="glass-badge b2">2022 예비창업패키지 창업진흥원장상 장려상</div>
+        <div class="glass-badge b3">2023 현대모비스 ESG 아이디어톤 우수상</div>
+        <div class="glass-badge b4">LG DX SCHOOL DX프로젝트 팀장 · 최우수상 수상</div>
+        <div class="glass-badge b5">현대 소프티어 서비스 기획 프로젝트 수행<br>(Zero Waiting · 시니클)</div>
       </div>
 
+      <!-- PDF Introduction 텍스트 -->
+      <div class="about-desc about-desc--center">
+        <p>
+          프로그래밍 언어와 기술에 대한 관심으로 웹 개발, 애플리케이션 개발, 데이터베이스 관리, 인공지능 및 머신러닝 등
+          다양한 분야에 흥미를 가지게 되었습니다. 이를 바탕으로 컴퓨터공학부에 진학해 관련 지식과 기술을 체계적으로 탐구해 왔습니다.
+        </p>
+
+        <p>
+          문득 다양한 프로젝트를 통해 개발자로서의 경험을 쌓고 싶다는 열망이 생겼습니다.
+          이를 통해 문제 해결 능력과 소프트웨어 개발에 대한 전반적인 이해를 키우고자 했습니다.
+          이러한 목표로 친구들과 함께 스타트업을 시작하였으며, 포트폴리오를 통해 그동안의 작업물과 성과를 확인하실 수 있습니다.
+        </p>
+
+        <p>
+          꾸준히 배우고 성장하는 것을 목표로 하며, 새로운 기술과 도구를 익히는 데 열정을 가지고 있습니다.
+          문제를 창의적이고 효율적으로 해결하며, 팀과의 원활한 소통과 협업을 통해 목표를 달성하는 데 집중하고 있습니다.
+        </p>
+
+        <p>
+          저의 목표는 사용자에게 가치 있는 솔루션을 제공하는 것입니다.
+          문제를 명확히 파악하고 요구사항을 충실히 이해하여 최적의 솔루션을 개발함으로써 사용자 경험을 지속적으로 향상시키는 것이 제 비전입니다.
+        </p>
+      </div>
+
+      <!-- RESUME -->
       <section class="resume" aria-label="Résumé">
         <div class="resume-section">
           <h2 class="resume-sec-title">Education</h2>
           <ul class="resume-list">
             <li class="resume-item">
-              <div class="ri-left">현대소프티어 부트캠프 서비스기획 직무 수료</div>
-              <div class="ri-right">2025.02.18 - 08.13</div>
+              <div class="ri-left">서운고등학교 (공학계열)</div>
+              <div class="ri-right">2016 - 2019</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">LG DX SCHOOL 수료</div>
-              <div class="ri-right">2025.02.18 - 08.13</div>
+              <div class="ri-left">인천대학교 컴퓨터공학부 (졸업 예정)</div>
+              <div class="ri-right">2019 -</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">인천대학교 컴퓨터공학부 졸업</div>
-              <div class="ri-right">2019.09 - 2025.03</div>
+              <div class="ri-left">LG DX SCHOOL (LG 전자 AI 서비스 기획 과정)</div>
+              <div class="ri-right">2024.12 - 2025.06</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">서운고등학교 졸업</div>
-              <div class="ri-right">2016.03 - 2019.01</div>
+              <div class="ri-left">현대 소프티어 부트캠프 (HMG 서비스기획 과정)</div>
+              <div class="ri-right">2025.07 - 2025.08</div>
             </li>
           </ul>
         </div>
+
         <div class="resume-section">
           <h2 class="resume-sec-title">Experience</h2>
           <ul class="resume-list">
             <li class="resume-item">
-              <div class="ri-left">(주)앤드와이즈 서비스기획 직무 주임</div>
-              <div class="ri-right">2024.03 - 06</div>
+              <div class="ri-left">로지벌스(Logiverse) 창업스터디 설립</div>
+              <div class="ri-right">2021</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">로지벌스 창업</div>
-              <div class="ri-right">2024.03 - 06</div>
+              <div class="ri-left">회사 웹페이지 구축 (로지벌스 홈페이지 · CTO)</div>
+              <div class="ri-right">2023.02 - 2023.05</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">현대모비스 ESG 아이디어톤</div>
-              <div class="ri-right">2022.01 - 03</div>
+              <div class="ri-left">비트원 유니버스 어플 UI/UX 제작</div>
+              <div class="ri-right">2023.03 - 2023.06</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">인천대학교 캡스톤디자인 (Unreal Engine 5 · 1인칭 FPS)</div>
+              <div class="ri-right">2023.09 - 2024.01</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">인천연합 창업경진대회 참가</div>
+              <div class="ri-right">2024.05 - 2024.10</div>
             </li>
           </ul>
         </div>
+
         <div class="resume-section">
-          <h2 class="resume-sec-title">Language</h2>
+          <h2 class="resume-sec-title">Awards</h2>
           <ul class="resume-list">
             <li class="resume-item">
-              <div class="ri-left">OPic im2</div>
-              <div class="ri-right">2025.01</div>
+              <div class="ri-left">2022 예비창업패키지 · 창업진흥원장상(장려상)</div>
+              <div class="ri-right">2022.09 - 2023.01</div>
             </li>
-
+            <li class="resume-item">
+              <div class="ri-left">2023 현대모비스 ESG 아이디어톤 · 우수상</div>
+              <div class="ri-right">2023.07 - 2023.08</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">동국대학교 총장 · 우수 창업동아리 대상</div>
+              <div class="ri-right">2023.03 - 2024.02</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">인천대학교 캡스톤 디자인 · 우수상</div>
+              <div class="ri-right">2023.08 - 2024.05</div>
+            </li>
           </ul>
         </div>
+
+        <div class="resume-section">
+          <h2 class="resume-sec-title">Tech Stack</h2>
+          <ul class="resume-list">
+            <li class="resume-item">
+              <div class="ri-left">Python · C언어 · Java</div>
+              <div class="ri-right">Programming</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">React · HTML · CSS · PHP</div>
+              <div class="ri-right">Web</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">Dart(Flutter)</div>
+              <div class="ri-right">App</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">Unreal Engine 5</div>
+              <div class="ri-right">Game</div>
+            </li>
+          </ul>
+        </div>
+
         <div class="resume-section">
           <h2 class="resume-sec-title">Certificate</h2>
           <ul class="resume-list">
             <li class="resume-item">
-              <div class="ri-left">운전면허 1종 보통</div>
-              <div class="ri-right">2024.08</div>
+              <div class="ri-left">리눅스 마스터 2급</div>
+              <div class="ri-right">—</div>
             </li>
             <li class="resume-item">
-              <div class="ri-left">리눅스 마스터 2급</div>
-              <div class="ri-right">2020.01</div>
+              <div class="ri-left">문서실무 1급</div>
+              <div class="ri-right">—</div>
             </li>
             <li class="resume-item">
               <div class="ri-left">ITQ OA 마스터</div>
-              <div class="ri-right">2019.06</div>
+              <div class="ri-right">—</div>
+            </li>
+            <li class="resume-item">
+              <div class="ri-left">GTQ 1급</div>
+              <div class="ri-right">—</div>
             </li>
           </ul>
         </div>
+
+        <!-- Skills: PDF 기반(React/Flutter/Python/UE5/Figma/PS/FinalCut 등) -->
         <div class="resume-section skills-section">
           <h2 class="resume-sec-title">Skills</h2>
+
           <div class="skills">
-            <button class="skill-oval" type="button">
-              <span class="skill-label">HTML</span>
-              <div class="skill-detail">
-                <h3>HTML</h3>
-                <p>웹 페이지 구조를 정확하게 마크업할 수 있어요</p>
-              </div>
-            </button>
-            <button class="skill-oval" type="button">
-              <span class="skill-label">CSS</span>
-              <div class="skill-detail">
-                <h3>CSS</h3>
-                <p>반응형 레이아웃과 스타일링을 자유롭게 구현해요</p>
-              </div>
-            </button>
-            <button class="skill-oval" type="button">
-              <span class="skill-label">JavaScript</span>
-              <div class="skill-detail">
-                <h3>JavaScript</h3>
-                <p>사용자 행동에 따라 화면과 기능을 제어할 수 있어요</p>
-              </div>
-            </button>
-            <button class="skill-oval" type="button">
-              <span class="skill-label">jQuery</span>
-              <div class="skill-detail">
-                <h3>jQuery</h3>
-                <p>슬라이드, 토글, 인터랙션을 빠르게 구현할 수 있어요</p>
-              </div>
-            </button>
             <button class="skill-oval" type="button">
               <span class="skill-label">React</span>
               <div class="skill-detail">
                 <h3>React</h3>
-                <p>재사용 가능한 컴포넌트와 상태 기반 UI를 구현해요</p>
+                <p>로지벌스 회사 홈페이지 프론트엔드를 React로 구축했습니다.</p>
               </div>
             </button>
+
+            <button class="skill-oval" type="button">
+              <span class="skill-label">JavaScript</span>
+              <div class="skill-detail">
+                <h3>JavaScript</h3>
+                <p>JSON 기반 로직 구성 및 웹페이지 기능/함수 설계를 경험했습니다.</p>
+              </div>
+            </button>
+
+            <button class="skill-oval" type="button">
+              <span class="skill-label">Flutter</span>
+              <div class="skill-detail">
+                <h3>Flutter (Dart)</h3>
+                <p>LG DX SCHOOL DX 프로젝트에서 Flutter로 IoT 연동 앱을 개발했습니다.</p>
+              </div>
+            </button>
+
+            <button class="skill-oval" type="button">
+              <span class="skill-label">Python</span>
+              <div class="skill-detail">
+                <h3>Python</h3>
+                <p>웹 크롤링/텍스트 전처리 및 TF-IDF, LDA, K-means 분석을 수행했습니다.</p>
+              </div>
+            </button>
+
+            <button class="skill-oval" type="button">
+              <span class="skill-label">Unreal 5</span>
+              <div class="skill-detail">
+                <h3>Unreal Engine 5</h3>
+                <p>캡스톤 디자인 팀프로젝트에서 1인칭 FPS 게임 제작을 진행했습니다.</p>
+              </div>
+            </button>
+
             <button class="skill-oval" type="button">
               <span class="skill-label">Figma</span>
               <div class="skill-detail">
                 <h3>Figma</h3>
-                <p>컴포넌트 기반으로 재사용 가능한 UI를 구성해요</p>
+                <p>비트원 유니버스 앱 UI 설계와 프로토타입 제작을 담당했습니다.</p>
               </div>
             </button>
+
             <button class="skill-oval" type="button">
               <span class="skill-label">Photoshop</span>
               <div class="skill-detail">
                 <h3>Photoshop</h3>
-                <p>콘텐츠 이미지를 빠르게 보정하고 정리해요</p>
+                <p>UI 편집과 디자인 리소스 정리에 활용했습니다(비트원 유니버스 등).</p>
               </div>
             </button>
+
             <button class="skill-oval" type="button">
-              <span class="skill-label">Illustrator</span>
+              <span class="skill-label">Final Cut X</span>
               <div class="skill-detail">
-                <h3>Illustrator</h3>
-                <p>프로젝트용 아이콘과 UI 벡터 자산을 제작해요</p>
+                <h3>Final Cut X</h3>
+                <p>로지벌스 회사 홍보 영상 편집(회사소개/메인 비전/서비스 소개)을 수행했습니다.</p>
               </div>
             </button>
           </div>
@@ -327,68 +432,84 @@
       </section>
     </div>
   </section>
+
+  <!-- WORK: PDF 기반 4개 대표 작업 -->
   <section id="work" class="work-stack" aria-label="Selected Works" style="--count: 4">
+
+    <!-- [01] Logiverse Website -->
     <div class="work-section" data-layer="1">
-      <img src="img/work1.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+      <img src="img/work01.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+
+      <!-- data-video 값은 기존 구조 유지 -->
       <div class="work-hero" data-video="fandonVd.mp4">
-        <img src="img/work1.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
+        <img src="img/work01.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
         <div class="work-hover" aria-hidden="true">
           <video class="work-hover__video" preload="metadata" muted playsinline></video>
         </div>
       </div>
+
       <div class="work-info">
         <div class="work-number">[ 01 ]</div>
-        <h2 class="work-heading">React Fandom App<br>Development</h2>
+        <h2 class="work-heading">Logiverse<br>Website Build</h2>
         <ul class="work-tags">
-          <li>Global UX</li>
-          <li>Multilingual</li>
-          <li>RealTime Features</li>
-          <li>Fan Engagement</li>
+          <li>React</li>
+          <li>JSON</li>
+          <li>CSS</li>
+          <li>Front-end</li>
         </ul>
         <a href="#" class="work-btn">Explorest [→]</a>
       </div>
+
       <div class="section-peek" data-state="closed" aria-expanded="false">
         <button class="section-peek__tab" type="button" aria-controls="peek1" aria-expanded="false"
           aria-label="Open project info">
           <span class="tab-bars"></span>
         </button>
+
         <aside id="peek1" class="section-peek__panel" role="complementary" aria-label="Work detail">
           <div class="section-peek__inner">
-            <h3 class="section-peek__title">React Fandom App Development</h3>
-            <div class="section-peek__meta">2025.07.01 ~ 08.03</div>
+            <h3 class="section-peek__title">로지벌스 홈페이지 제작</h3>
+            <div class="section-peek__meta">2023.02 - 2023.05</div>
+
             <p class="section-peek__desc">
-              React 기반으로 케이팝 팬덤 전용 앱을 개발한 팀 프로젝트입니다.<br>
-              글로벌 유저를 고려한 다국어 전환, 라이브 방송 연동, 실시간 채팅 및 인터랙션 기능을 구현하여 팬덤 경험을 확장하는 데 집중했습니다.
+              저희 로지벌스 회사의 홈페이지를 제작하였습니다.<br>
+              이 프로젝트에서 CTO인 제가 100% 개발, 작업을 완료하였으며 React 및 JSON, CSS 등 여러 기술을 사용했습니다.<br>
+              개발자가 혼자인 만큼 어렵고 힘든 부분이 많았지만 첫 대형 프로젝트를 맡아서 최선을 다해 작업을 완료했습니다.
             </p>
-            <b class="section-peek__desc">
-              주요 업무
-            </b>
+
+            <b class="section-peek__desc">주요 업무</b>
             <p class="section-peek__scroll">
-              <b>기획</b><br>
-              글로벌 팬덤 유저 기능 정의 및 UX 흐름 설계 <br>
-              중국 유저 설문조사로 사용성 인사이트 도출 <br>
-              문제 정의·저니맵 제작, 정보구조 설계<br>
-              <br>
-              <b>구현</b><br>
-              React 온보딩 플로우(인증번호·비밀번호 확인) 구현<br>
-              언어 설정 드롭업 통한 실시간 다국어 전환, 아티스트 팔로우 인터랙션<br>
-              라이브 방송(자막·좋아요·댓글·공유·번역) 및 실시간 채팅 기능 개발<br>
-              AI 챗봇 고정·커스텀 아이콘 적용
+              <b>작업 성격</b><br>
+              웹페이지 설계, 개발<br><br>
+
+              <b>작업 역할</b><br>
+              개발, 설계, 코딩, 알고리즘 개발<br><br>
+
+              <b>구현 내용</b><br>
+              VSCODE 환경으로 개발 · 사용 언어: React<br>
+              회사 홈페이지 프론트엔드 개발<br>
+              주요 기능: 회사 소개 내용, 회사 제공서비스, 메일 전송 기능, 고객 센터<br><br>
+
+              <b>회고</b><br>
+              React 개발이 처음이어서 많은 시행착오를 겪었지만 기존에 배웠던 Java, HTML 등<br>
+              웹페이지 개발에 필요한 기반 덕분에 빠르게 습득할 수 있었습니다.
             </p>
+
             <div class="section-peek__footer">
               <ul class="section-peek__tags">
-                <li>Global UX</li>
-                <li>Multilingual</li>
-                <li>RealTime Features</li>
-                <li>Fan Engagement</li>
+                <li>React</li>
+                <li>JSON</li>
+                <li>CSS</li>
+                <li>VSCode</li>
               </ul>
+
               <div class="section-peek__cta">
-                <a href="https://bside-steel.vercel.app/" class="section-peek__link" target="_blank" rel="noopener">
-                  VIEW PROJECT [↗]
+                <a href="https://logiverse22.com" class="section-peek__link" target="_blank" rel="noopener">
+                  VIEW SITE [↗]
                 </a>
-                <a href="https://www.figma.com/proto/yrUJcnqFAGx973zv0Ssr22/%EC%97%84%EC%95%84%EB%A6%84?node-id=2148-291&t=bfDkSxkq3HELLsxs-1"
+                <a href="https://www.youtube.com/watch?v=caok8arwdV8"
                   class="section-peek__link section-peek__link--figma" target="_blank" rel="noopener">
-                  OPEN IN FIGMA [↗]
+                  WATCH INTRO VIDEO [↗]
                 </a>
               </div>
             </div>
@@ -396,186 +517,249 @@
         </aside>
       </div>
     </div>
+
+    <!-- [02] BetWeen Universe UI/UX -->
     <div class="work-section" data-layer="2">
-      <img src="img/work2.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+      <img src="img/work02.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+
       <div class="work-hero" data-video="artVd.mp4">
-        <img src="img/work2.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
+        <img src="img/work02.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
         <div class="work-hover" aria-hidden="true">
           <video class="work-hover__video" preload="metadata" muted playsinline></video>
         </div>
       </div>
+
       <div class="work-info">
         <div class="work-number">[ 02 ]</div>
-        <h2 class="work-heading">K-Brand<br>Website/Mobile<br>Renewal</h2>
+        <h2 class="work-heading">BetWeen Universe<br>UI/UX Design</h2>
         <ul class="work-tags">
-          <li>Responsive Design</li>
-          <li>Interactive UI</li>
-          <li>Web Accessibility</li>
+          <li>Figma</li>
+          <li>Prototype</li>
+          <li>Photoshop</li>
+          <li>Sketch</li>
         </ul>
         <a href="#" class="work-btn">Explorest [→]</a>
       </div>
+
       <div class="section-peek" data-state="closed" aria-expanded="false">
         <button class="section-peek__tab" type="button" aria-controls="peek2" aria-expanded="false"
           aria-label="Open project info">
           <span class="tab-bars"></span>
         </button>
+
         <aside id="peek2" class="section-peek__panel" role="complementary" aria-label="Work detail">
           <div class="section-peek__inner">
-            <h3 class="section-peek__title">K-Brand Website/Mobile Renewal</h3>
-            <div class="section-peek__meta">2025.06.03 ~ 06.30</div>
+            <h3 class="section-peek__title">비트원 유니버스 UI/UX 제작</h3>
+            <div class="section-peek__meta">2023.03 - 2023.06</div>
+
             <p class="section-peek__desc">
-              서울시립미술관 웹사이트를 현대적 감각으로 리뉴얼한 팀 프로젝트입니다.<br>
-              공공기관 웹사이트 특유의 복잡함을 개선하고, 반응형 레이아웃과 다양한<br>인터랙션을 적용해 접근성과 몰입도를 높이는 것에 집중했습니다.
+              로지벌스 온라인 어플인 비트원 유니버스 어플 UI/UX 개발입니다.<br>
+              Figma를 통해 어플 전반적인 디자인 설계 및 프로토타입 제작까지 처음부터 끝까지 담당을 하였습니다.<br>
+              프로그래밍 언어 뿐만 아니라 디자인 설계를 맡아보면서 코딩뿐만 아니라 디자인 측면에서 고려해야 할 사항들이 많다는 것을 알았습니다.
             </p>
-            <b class="section-peek__desc">
-              주요 역할
-            </b>
+
+            <b class="section-peek__desc">주요 업무</b>
             <p class="section-peek__scroll">
-              <b>기획</b><br>
-              사용자 인터뷰와 UX 분석으로 불편 요소 도출,
-              경쟁사 분석 및 와이어프레임 설계,<br>
-              탐색 흐름 단순화와 정보 구조 재설계를 통한 UI 개선 방향 제시<br>
-              <br>
-              <b>디자인</b><br>
-              뉴스/공지, 전시/프로그램, 소장품, FAQ 등 상세 페이지 <br>UI 시안 제작 및 반응형 레이아웃 설계
+              <b>작업 성격</b><br>
+              어플 UI/UX 개발, 디자인<br><br>
+
+              <b>작업 역할</b><br>
+              Figma를 통한 UI 설계, 어플 UX 구축<br><br>
+
+              <b>주요 기능</b><br>
+              장비 매매 기능, AI 챗봇 시스템, 장비 명판 스캔 기능<br><br>
+
+              <b>디자인 툴</b><br>
+              Photoshop, Sketch, Figma
             </p>
+
             <div class="section-peek__footer">
               <div class="section-peek__cta--figma">
-                <a href="https://www.figma.com/proto/yrUJcnqFAGx973zv0Ssr22/%EC%97%84%EC%95%84%EB%A6%84?node-id=2148-2689&t=bfDkSxkq3HELLsxs-1"
-                  class="section-peek__link section-peek__link--figma" target="_blank" rel="noopener">
+                <a href="#" class="section-peek__link section-peek__link--figma" target="_blank" rel="noopener">
                   OPEN IN FIGMA [↗]
                 </a>
               </div>
+
               <ul class="section-peek__tags breakpoint-controls">
-                <li><button type="button" class="mode-btn">PC Mode</button></li>
-                <li><button type="button" class="mode-btn">1024 Mode</button></li>
-                <li><button type="button" class="mode-btn">768 Mode</button></li>
-                <li><button type="button" class="mode-btn">486 Mode</button></li>
+                <li><button type="button" class="mode-btn">Figma</button></li>
+                <li><button type="button" class="mode-btn">Prototype</button></li>
+                <li><button type="button" class="mode-btn">Photoshop</button></li>
+                <li><button type="button" class="mode-btn">Sketch</button></li>
               </ul>
             </div>
           </div>
         </aside>
       </div>
     </div>
+
+    <!-- [03] LG DX SCHOOL -->
     <div class="work-section" data-layer="3">
-      <img src="img/work3.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+      <img src="img/work03.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+
       <div class="work-hero" data-video="ilVd.mp4">
-        <img src="img/work3.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
+        <img src="img/work03.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
         <div class="work-hover" aria-hidden="true">
           <video class="work-hover__video" preload="metadata" muted playsinline></video>
         </div>
       </div>
+
       <div class="work-info">
         <div class="work-number">[ 03 ]</div>
-        <h2 class="work-heading">Clone Coding</h2>
+        <h2 class="work-heading">LG DX SCHOOL<br>DX Project (Pridge)</h2>
         <ul class="work-tags">
-          <li>ResponsiveWeb</li>
-          <li>JavaScriptES6</li>
-          <li>InteractiveUI</li>
+          <li>TF-IDF</li>
+          <li>LDA/K-means</li>
+          <li>Flutter</li>
+          <li>XGBoost</li>
         </ul>
         <a href="#" class="work-btn">Explorest [→]</a>
       </div>
+
       <div class="section-peek" data-state="closed" aria-expanded="false">
         <button class="section-peek__tab" type="button" aria-controls="peek3" aria-expanded="false"
           aria-label="Open project info">
           <span class="tab-bars"></span>
         </button>
+
         <aside id="peek3" class="section-peek__panel" role="complementary" aria-label="Work detail">
           <div class="section-peek__inner">
-            <h3 class="section-peek__title">Clone Coding</h3>
-            <div class="section-peek__meta">2025.04.07 ~ 05.07</div>
-            <p class="section-peek__desc">
-              기존 아이엘 모빌리티 웹사이트를 재구현한 개인 프로젝트입니다.<br>
-              자동차 산업의 서비스 메시지 전달 구조와 사용자 경험 패턴을 연구하여
-              HTML·CSS·JS를 기반으로 반응형 인터랙션과 브랜드 UI를 재현하여 모빌리티 분야의 디지털 경험 설계 역량을 강화했습니다.
+            <h3 class="section-peek__title">LG DX SCHOOL · DX Project (Pridge)</h3>
+            <div class="section-peek__meta">2024.12 - 2025.06</div>
 
+            <p class="section-peek__desc">
+              LG DX SCHOOL에서 데이터 분석과 서비스 기획 프로젝트를 수행했습니다.<br>
+              10만 건 이상의 데이터를 전처리하고 TF-IDF, LDA, K-means 분석을 통해 주요 인사이트를 도출했습니다.<br>
+              솔루션으로 반려견 분리불안 해소 스마트홈 앱을 기획하고 Flutter로 IoT 연동 앱을 개발했습니다.<br>
+              프로젝트 과정에서 데이터 기반 문제 정의와 서비스 설계 능력을 키웠으며, 리더십을 발휘해 최우수상을 수상했습니다.
             </p>
-            <b class="section-peek__desc">
-              주요 업무
-            </b>
+
+            <b class="section-peek__desc">주요 업무</b>
             <p class="section-peek__scroll">
-              <b>헤더 인터랙션</b><br>
-              스크롤·호버 시 배경·로고 전환, GNB 메뉴 등장, 스크롤 방향에 따른 고정/해제 구현, 콘텐츠 인터랙션
-              클릭 시 중앙 박스 확대·양옆 축소, 이미지 호버 시 컬러 오버레이 및 링크 텍스트 등장<br>
-              <br>
-              <b>애니메이션 & 슬라이드</b><br>
-              텍스트 개별 모션, 이미지 확대 효과, Slick 기반 슬라이드와 버튼 상태 업데이트<br>
-              <br>
-              <b>하단 메뉴 & 반응형</b><br>
-              “Family Site” 드롭다운, 마우스오버 강조, PC/모바일 반응형 UI 개발
+              <b>DX Project</b><br>
+              반려견 분리불안 해소를 위한 스마트 홈 솔루션 Pridge 기획 및 개발<br>
+              반려가구 10만 건 이상의 VOC 데이터를 크롤링·분석하여 반려견 분리불안 문제 정의<br>
+              RFID 목걸이와 IoT 기기 연동을 통한 스마트홈 서비스 기획<br><br>
+
+              <b>기술</b><br>
+              웹 크롤링, 텍스트 전처리 및 감성분석, LDA·K-means 클러스터링<br>
+              RFID 기반 행동 데이터 수집, XGBoost 회귀모델을 활용한 실시간 불안 점수 예측<br><br>
+
+              <b>개발 스택</b><br>
+              Dart(Flutter) · Flutter SDK 3.x · Provider · Firebase Core<br>
+              DB: Firebase Firestore, Realtime Database, Firebase Storage, Oracle DB<br>
+              IDE: Android Studio, Visual Studio Code<br>
+              API/라이브러리: RESTful API(JSON), cloud_firestore, firebase_auth, google tts api
             </p>
+
             <div class="section-peek__footer">
-              <ul class="section-peek__tags breakpoint-controls">
-                <li><button type="button" class="mode-btn">PC Mode</button></li>
-                <li><button type="button" class="mode-btn">1024 Mode</button></li>
-                <li><button type="button" class="mode-btn">768 Mode</button></li>
-                <li><button type="button" class="mode-btn">486 Mode</button></li>
+              <ul class="section-peek__tags">
+                <li>Data</li>
+                <li>Service Planning</li>
+                <li>IoT</li>
+                <li>Flutter</li>
               </ul>
+
+              <div class="section-peek__cta">
+                <!-- PDF 내부 하이퍼링크 추출(피그마) -->
+                <a href="https://www.figma.com/design/8Pk0KSPyCpVnaohi5Ffr8l/LG-DX-SCHOOL?node-id=0-1&t=rQSJtpRKybXYgZWr-1"
+                  class="section-peek__link" target="_blank" rel="noopener">
+                  OPEN IN FIGMA [↗]
+                </a>
+                <a href="https://www.figma.com/design/8Pk0KSPyCpVnaohi5Ffr8l/LG-DX-SCHOOL?node-id=1-3&t=43YOxbdo7Z0rpTlF-1"
+                  class="section-peek__link section-peek__link--figma" target="_blank" rel="noopener">
+                  OPEN DX PROJECT [↗]
+                </a>
+              </div>
             </div>
           </div>
         </aside>
       </div>
     </div>
+
+    <!-- [04] Hyundai Softeer -->
     <div class="work-section" data-layer="4">
-      <img src="img/work4.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+      <img src="img/work04.png" alt="" class="work-hero__bg" loading="lazy" decoding="async">
+
       <div class="work-hero" data-video="daehVd.mp4">
-        <img src="img/work4.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
+        <img src="img/work04.png" alt="" class="work-hero__fg" loading="lazy" decoding="async">
         <div class="work-hover" aria-hidden="true">
           <video class="work-hover__video" preload="metadata" muted playsinline></video>
         </div>
       </div>
+
       <div class="work-info">
         <div class="work-number">[ 04 ]</div>
-        <h2 class="work-heading">App Redesign</h2>
+        <h2 class="work-heading">Hyundai Softeer<br>Service Planning</h2>
         <ul class="work-tags">
-          <li>User Journey</li>
-          <li>UX Research</li>
-          <li>Usability</li>
+          <li>User Research</li>
+          <li>IA/Wireframe</li>
+          <li>MVP</li>
+          <li>Roadmap</li>
         </ul>
         <a href="#" class="work-btn">Explorest [→]</a>
       </div>
+
       <div class="section-peek" data-state="closed" aria-expanded="false">
         <button class="section-peek__tab" type="button" aria-controls="peek4" aria-expanded="false"
           aria-label="Open project info">
           <span class="tab-bars"></span>
         </button>
+
         <aside id="peek4" class="section-peek__panel" role="complementary" aria-label="Work detail">
           <div class="section-peek__inner">
-            <h3 class="section-peek__title">App Redesign</h3>
-            <div class="section-peek__meta">2025.03.06 ~ 03.19</div>
+            <h3 class="section-peek__title">현대 소프티어 · 서비스 기획</h3>
+            <div class="section-peek__meta">2025.07 - 2025.08</div>
+
             <p class="section-peek__desc">
-              캐치테이블 앱을 리디자인한 개인 프로젝트입니다.<br>
-              실제 사용 경험과 사용자 인터뷰, 경쟁사 분석을 토대로 예약 여정 전반의 불편 요소를 정의하고, 검색과 필터 UI를 재구성하며 예약 흐름을 단순화했습니다. 이를 통해 보다 직관적이고 매끄러운
-              사용자 경험을 제시했습니다.
+              현대 소프티어 부트캠프에서 서비스 기획 프로젝트를 수행했습니다.<br>
+              구내식당 혼잡도 개선 서비스와 시니어 강좌 매칭 플랫폼을 기획하며 상위 기획과 상세 설계과정을 경험했습니다.<br>
+              프로젝트 과정에서 사용자 경험 중심의 서비스 설계 능력을 키웠으며, 기획 전 과정을 주도하며 협업과 조율 능력을 강화했습니다.
             </p>
-            <b class="section-peek__desc">
-              주요 업무
-            </b>
+
+            <b class="section-peek__desc">주요 업무</b>
             <p class="section-peek__scroll">
-              <b>기획</b><br>
-              사용 체험·인터뷰·경쟁사 분석으로 불편 요소 도출<br>
-              예약 단계 흐름 최적화, 주요 기능 우선순위 재배치<br>
-              필터 구조 단순화 등 정보 구조와 탐색 흐름을 재설계하여<br>
-              사용자 관점 직관적 예약 경험 기획<br>
-              <br>
-              <b>디자인</b><br>
-              검색탭 통합, 필터 단순화, 온보딩 → 예약 완료까지 리디자인 설계
+              <b>종합 프로젝트: 시니클</b><br>
+              액티브 시니어 대상 자기계발 강좌 매칭 플랫폼 기획<br>
+              5060 세대의 자기계발 수요와 강좌 정보 분산 문제 정의<br>
+              조건 기반 검색과 수요 응답형 강좌 개설 기능 설계<br>
+              기술: 유저 리서치, 서비스 IA·와이어프레임 설계, 로드맵 도출<br><br>
+
+              <b>개인 프로젝트: Zero Waiting</b><br>
+              구내식당 혼잡도 해소를 위한 Zero Waiting 서비스 기획<br>
+              직원 대상 설문조사와 크롤링 데이터를 활용해 혼잡 원인을 분석<br>
+              인기 메뉴 쏠림 완화와 대기시간 분산을 위한 서비스 구조 설계<br>
+              NFC 태그 기반 줄서기 로직과 관리자 대시보드 설계<br>
+              기술: 데이터 크롤링, 사용자 리서치, 서비스 IA·와이어프레임, MVP 개발
             </p>
+
             <div class="section-peek__footer">
               <ul class="section-peek__tags">
-                <li>User Journey</li>
-                <li>UX Research</li>
-                <li>Usability</li>
+                <li>Research</li>
+                <li>IA</li>
+                <li>Wireframe</li>
+                <li>MVP</li>
               </ul>
-              <a href="https://www.figma.com/proto/yrUJcnqFAGx973zv0Ssr22/%EC%97%84%EC%95%84%EB%A6%84?node-id=2032-8228&t=HsiYp8tFEd3DlvJE-"
-                class="section-peek__link" target="_blank" rel="noopener"> OPEN IN FIGMA [↗]
-              </a>
+
+              <div class="section-peek__cta">
+                <!-- PDF 내부 하이퍼링크 추출(피그마) -->
+                <a href="https://www.figma.com/design/N8kdYXNCzU2J4UBpssreTR/%ED%98%84%EB%8C%80-%EC%86%8C%ED%94%84%ED%8B%B0%EC%96%B4-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84?node-id=0-1&t=n7Y8jfNplGVNaXX4-1"
+                  class="section-peek__link" target="_blank" rel="noopener">
+                  OPEN IN FIGMA [↗]
+                </a>
+                <a href="https://www.figma.com/design/N8kdYXNCzU2J4UBpssreTR/%ED%98%84%EB%8C%80-%EC%86%8C%ED%94%84%ED%8B%B0%EC%96%B4-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84?node-id=1-2&t=n7Y8jfNplGVNaXX4-1"
+                  class="section-peek__link section-peek__link--figma" target="_blank" rel="noopener">
+                  OPEN PROJECT PAGE [↗]
+                </a>
+              </div>
             </div>
           </div>
         </aside>
       </div>
     </div>
+
   </section>
+
+  <!-- ARCHIVE -->
   <section id="archive" aria-label="Archive • What I wanna be">
     <div class="archive-inner">
       <div class="text-wrapper">
@@ -600,29 +784,34 @@
         </div>
       </div>
     </div>
+
     <section class="archive-strengths" aria-label="Archive • Stories within">
       <div class="strengths-wrap">
         <p class="strengths-eyebrow">Stories within</p>
         <h3 class="strengths-title">STRENGTHS THAT SHAPE MY FLOW</h3>
+
         <div class="strengths-grid" id="strengthsGrid">
           <figure class="strength-card" data-key="1" tabindex="0">
             <div class="media">
-              <img src="img/archive_1.png" alt="Connectivity" loading="lazy" decoding="async">
+              <img src="img/archive_01.png" alt="Connectivity" loading="lazy" decoding="async">
             </div>
             <figcaption><span class="ko">연결</span> <span class="en">Connectivity</span></figcaption>
           </figure>
+
           <figure class="strength-card" data-key="2" tabindex="0">
             <div class="media">
-              <img src="img/archive_2.png" alt="Execution" loading="lazy" decoding="async">
+              <img src="img/archive_02.png" alt="Execution" loading="lazy" decoding="async">
             </div>
             <figcaption><span class="ko">실행</span> <span class="en">Execution</span></figcaption>
           </figure>
+
           <figure class="strength-card" data-key="3" tabindex="0">
             <div class="media">
-              <img src="img/archive_3.png" alt="Anticipation" loading="lazy" decoding="async">
+              <img src="img/archive_03.png" alt="Harmony" loading="lazy" decoding="async">
             </div>
             <figcaption><span class="ko">조율</span> <span class="en">Harmony</span></figcaption>
           </figure>
+
           <aside class="strength-note" aria-label="Archive text">
             <p class="note-eyebrow">[ Hover on image ]</p>
             <div class="note-panels">
@@ -633,42 +822,48 @@
                   that taught me how to connect and create.
                 </p>
               </section>
+
+              <!-- PDF 기반으로 note-panel 교체 -->
               <section class="note-panel" data-key="1">
-                <h4 class="note-title">국제회의</h4>
+                <h4 class="note-title">창업 커리어</h4>
                 <p class="note-desc">
-                  약 20건의 국제회의 현장 경험과 중국 베이징에서 인턴으로 4건의 행사 기획에 직접 참여하며,
-                  사람과 정보가 얽힌 현장을 연결하는 법을 배웠습니다.<br><br>
-                  다양한 이해관계자의 요구를 연결하여 서비스 흐름을 명확히 기획하겠습니다.
+                  창업동아리/창업경진대회 참여와 로지벌스 운영 경험을 통해
+                  다양한 이해관계자와 목표를 연결하는 방식에 익숙해졌습니다.<br><br>
+                  문제를 공유하고, 팀과 외부 리소스를 엮어 성과로 이어지게 하는 “연결”을 강점으로 가져갑니다.
                 </p>
               </section>
+
               <section class="note-panel" data-key="2">
-                <h4 class="note-title">온라인마켓</h4>
+                <h4 class="note-title">로지벌스 홈페이지 제작</h4>
                 <p class="note-desc">
-                  싱가포르 온라인 마켓을 운영하여 상품 구성과 가격, 상세페이지까지 직접 다루어
-                  사용자 경험을 비즈니스 성과로 연결하는 경험을 쌓았습니다.<br><br>
-                  사용자 중심의 여정을 설계해 실질적 성과를 창출하겠습니다.
+                  CTO로서 로지벌스 회사 홈페이지를 100% 단독 개발하며
+                  설계-개발-배포까지 끝까지 책임지는 실행력을 키웠습니다.<br><br>
+                  React/JSON 기반 기능 구성, 메일 전송/고객센터 등 실사용 기능 구현을 수행했습니다.
                 </p>
               </section>
+
               <section class="note-panel" data-key="3">
-                <h4 class="note-title">UXUI 부트캠프 수료</h4>
+                <h4 class="note-title">LG DX SCHOOL (팀장)</h4>
                 <p class="note-desc">
-                  사용자 조사·IA 설계·피그마 프로토타입 제작 전 과정을 주도하며, 분석력과 실행력을 인정받아 우수상을 수상했습니다.<br><br>
-                  사용자 관점·데이터의 균형을 통해, 사용자가 체감하는 개선을 만들겠습니다.
+                  10만+ VOC 데이터를 분석해 문제를 정의하고, IoT 연동 앱을 기획·개발했습니다.<br><br>
+                  팀장으로서 방향성과 역할을 정리하며 협업/조율을 주도했고, 최우수상을 수상했습니다.
                 </p>
               </section>
+
               <section class="note-panel" data-key="4">
-                <h4 class="note-title">올림픽</h4>
+                <h4 class="note-title">Zero Waiting</h4>
                 <p class="note-desc">
-                  2022년 북경 동계올림픽에서 통역 봉사자로 3개월간 활동하며,
-                  사용자의 불편을 미리 예측하고 대응하는 습관을 키웠습니다.<br><br>
-                  잠재적 문제를 선제적으로 발견하고 직관적인 개선안을 제시하겠습니다.
+                  설문조사+크롤링 데이터를 기반으로 혼잡 원인을 분석하고,
+                  메뉴 쏠림과 대기시간 분산을 위한 서비스 구조를 설계했습니다.<br><br>
+                  잠재 문제를 선제적으로 파악하고 개선안을 구조화하는 “예측” 역량을 강화했습니다.
                 </p>
               </section>
             </div>
           </aside>
+
           <figure class="strength-card" data-key="4" tabindex="0">
             <div class="media">
-              <img src="img/archive_4.png" alt="Harmony" loading="lazy" decoding="async">
+              <img src="img/archive_04.png" alt="Anticipation" loading="lazy" decoding="async">
             </div>
             <figcaption><span class="ko">예측</span> <span class="en">Anticipation</span></figcaption>
           </figure>
@@ -676,19 +871,20 @@
       </div>
     </section>
   </section>
+
+  <!-- CONTACT / FOOTER -->
   <section id="contact" class="contact-blank" aria-label="Contact & Footer">
     <div class="contact-blank__inner footer-layout">
-
       <div class="footer-left">
         <div class="logo" aria-label="Limitless">
           <span class="logo-pre">Li</span><span class="logo-m">m</span><span class="logo-post">itless</span>
         </div>
         <div class="tag">begins here</div>
       </div>
+
       <div class="footer-venn" aria-hidden="true">
         <svg class="hero-venn" viewBox="0 0 1200 900" role="img" aria-label="Technology & Humanity">
           <defs>
-            <!-- Gradient & Filter 정의 -->
             <radialGradient id="gBlue" cx="70%" cy="35%" r="50%">
               <stop offset="0%" stop-color="#f8fbff" />
               <stop offset="20%" stop-color="#cae6ff" />
@@ -696,14 +892,17 @@
               <stop offset="70%" stop-color="#0b5bd6" />
               <stop offset="100%" stop-color="#062a7a" />
             </radialGradient>
+
             <radialGradient id="gTechHalo" cx="30%" cy="55%" r="65%">
               <stop offset="0%" stop-color="rgba(255,255,255,.18)" />
               <stop offset="60%" stop-color="rgba(255,255,255,.06)" />
               <stop offset="100%" stop-color="rgba(255,255,255,0)" />
             </radialGradient>
+
             <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
               <feGaussianBlur stdDeviation="20" />
             </filter>
+
             <filter id="dotGlow" x="-60%" y="-60%" width="220%" height="220%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="0.7" result="g" />
               <feMerge>
@@ -711,11 +910,13 @@
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
+
             <mask id="curveMask" maskUnits="userSpaceOnUse">
               <rect x="0" y="0" width="1200" height="900" fill="white" />
               <circle cx="625" cy="420" r="240" fill="black" />
               <circle cx="550" cy="600" r="240" fill="black" />
             </mask>
+
             <linearGradient id="gDiagBlue" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(135 .5 .5)">
               <stop offset="0%" stop-color="#BEEDEF" />
               <stop offset="55%" stop-color="#68C3C4" />
@@ -723,6 +924,7 @@
               <animateTransform attributeName="gradientTransform" type="rotate" values="135 .5 .5; 495 .5 .5" dur="20s"
                 repeatCount="indefinite" />
             </linearGradient>
+
             <radialGradient id="gFlow" cx="35%" cy="30%" r="55%" fx="30%" fy="28%">
               <stop offset="0%" stop-color="rgba(255,255,255,.18)" />
               <stop offset="35%" stop-color="rgba(255,255,255,.08)" />
@@ -730,32 +932,32 @@
               <animate attributeName="fx" values="30%;70%;30%" dur="22s" repeatCount="indefinite" />
               <animate attributeName="fy" values="28%;62%;28%" dur="26s" repeatCount="indefinite" />
             </radialGradient>
+
             <radialGradient id="gBlueVignette" cx="50%" cy="55%" r="62%">
               <stop offset="70%" stop-color="rgba(0,0,0,0)" />
               <stop offset="100%" stop-color="rgba(0,0,0,.25)" />
             </radialGradient>
           </defs>
 
-          <!-- 왼쪽 원 (Usability) -->
           <g transform="translate(400,330)">
             <circle r="200" fill="url(#gTechHalo)" />
             <circle r="220" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="3 7" opacity="0.85" />
             <text class="venn-label" x="0" y="0" fill="#000">Usability</text>
           </g>
 
-          <!-- 오른쪽 원 (Delight) -->
           <g transform="translate(770,590)">
             <circle r="230" fill="url(#gDiagBlue)" filter="url(#soft)" />
             <circle r="230" fill="url(#gFlow)" opacity=".25" />
             <text class="venn-label" x="0" y="0" fill="#ffffff">Delight</text>
           </g>
 
-          <!-- 곡선 + 회전 점 -->
           <ellipse cx="580" cy="500" rx="430" ry="240" transform="translate(1200,0) scale(-1,1) rotate(39.58 650 500)"
             fill="none" stroke="#777" stroke-width="2" stroke-linecap="round" mask="url(#curveMask)" />
+
           <g transform="translate(1200,0) scale(-1,1) rotate(39.58 650 500)">
             <path id="orbitPath" d="M 1010 500 A 430 240 0 1 1 150 500 A 430 240 0 1 1 1010 500" fill="none"
               stroke="none" />
+
             <g mask="url(#curveMask)">
               <circle r="6" fill="#111" filter="url(#dotGlow)">
                 <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
@@ -763,6 +965,7 @@
                 </animateMotion>
               </circle>
             </g>
+
             <g mask="url(#curveMask)">
               <circle r="6" fill="#111" filter="url(#dotGlow)">
                 <animateMotion dur="14s" begin="-7s" repeatCount="indefinite" rotate="auto">
@@ -774,9 +977,9 @@
         </svg>
       </div>
     </div>
+
     <p class="copyright">© 2025 All Right reserved.</p>
   </section>
-
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/slick.min.js"></script>
