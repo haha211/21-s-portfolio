@@ -1679,7 +1679,7 @@ body.at-about .wrap {
   border-radius: 8px;
 }
 
-.work-hero[data-video="fandonVd.mp4"] .work-hover__video {
+.work-hero[data-video="logiverse_intro.mp4"] .work-hover__video {
   width: 100%;
   max-height: 80%;
   object-fit: contain;
